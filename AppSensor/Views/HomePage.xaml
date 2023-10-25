@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSensor.Views.HomePage" BackgroundColor="#ffffff"
+             Title="HomePage">
+    <VerticalStackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="10">
+            <Label Text="Menú de sensores"
+               FontAttributes="Bold" 
+               FontSize="Title" 
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand" FontAutoScalingEnabled="False" Margin="0,90,0,0"
+               />
+            <StackLayout Orientation="Vertical" Margin="0,40,0,0">
+                <Button Text="Sensor de velocidad" Margin="5" Clicked="Button_Clicked" />
+           <!-- <Button Text="Sensor de acelerómetro" Margin="5" Clicked="Button_Clicked_1" />  -->
+                <Button Text="Sensor de barómetro" Margin="5"  Clicked="Button_Clicked_2"/>
+                <Button Text="Sensor de brújula" Margin="5" Clicked="Button_Clicked_3"  />
+                <Button Text="Sensor de vibración" Margin="5" Clicked="Button_Clicked_4"/>
+                <Button Text="Sensor de giroscopio" Margin="5" Clicked="Button_Clicked_5"/>
+                <Button Text="Sensor de magnetómetro" Margin="5" Clicked="Button_Clicked_6" />
+                <Button Text="Sensor de orientación" Margin="5" Clicked="Button_Clicked_7"/>
+                <Button Text="Login " Margin=" 5" Clicked="Button_Clicked_8"/>
+            </StackLayout>
+            
+            
+            
+            
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

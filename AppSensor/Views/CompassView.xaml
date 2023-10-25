@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSensor.Views.CompassView"
+             Title="CompassView">
+    <VerticalStackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+        <Label
+            Margin="25,10"
+            Text="Brujula"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label x:Name="CompassLabel"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"/>
+       
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image
+                x:Name="Flechita" 
+                Source="norte.png"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                
+                Margin="25"/>
+        </StackLayout>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
