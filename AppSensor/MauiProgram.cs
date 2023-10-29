@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AppSensor.Views;
+using Microsoft.Extensions.Logging;
 using Plugin.Fingerprint;
 using Plugin.Fingerprint.Abstractions;
 
@@ -17,12 +18,13 @@ namespace AppSensor
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
-		builder.Logging.AddDebug();
+
+
+            builder.Services.AddSingleton<HomePage>();
             builder.Services.AddSingleton(typeof(IFingerprint), CrossFingerprint.Current);
 
 
-#endif
+
 
             return builder.Build();
         }
